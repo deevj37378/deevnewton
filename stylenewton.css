@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navbar{
+    height: 80px;
+    background-color: #FFFFFF;
+    width: 100%;
+    color: #515151;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 8px; /* slight curved corners */
+    overflow: hidden;    /* ensures children are clipped to rounded corners */
+    
+}
+
+.logo{
+    /* keep for backward compatibility; prefer using .logo-img <img> */
+    height: 55px;
+    width: 210px;
+    display: block;
+    margin-top: 7px;
+}
+
+.logo-img{
+    height: 55px;
+    width: 210px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-logo{
+    height: 75px;
+    width: 210px;
+    margin-left: 20px;
+}
+
+.border{
+    border: 2px solid grey;
+}
+
+.nav-address{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 80px;
+    
+}
+
+.nav-address a{
+    text-decoration: none;
+    color: #16191D;
+}
+
+.nav-address-button{
+    height: 50px;
+    width: 100px;
+    background-color: #3271F0;
+    border-radius: 10px;
+}
+
+.nav-address-button a{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.hero-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* stack children vertically so text2 appears below text1 */
+    align-items: flex-start;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.text1{
+    display: block;
+    margin-left: 40px;
+    margin-top: 8px;
+       
+}
+
+.text1 p{
+    font-size: 25px;
+    color: #d94711;
+    font-weight: 600;
+}
+
+.text2{
+    display: block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.text2 p{
+    font-size: 60px;
+    font-family: Mona-sans;
+}
+
+.text3{
+    display: block;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+.app{
+    font-family: mona-sans;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between; /* distribute space evenly between boxes */
+    gap: 0; /* spacing handled by justify-content */
+    margin: 50px 60px 0 60px; /* top and horizontal spacing */
+    width: calc(100% - 120px); /* account for left/right margins so space-between works across container */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+/* box container: stacks image and caption vertically */
+.box{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.box1{
+    background-image: url(nst\ ru\ image.jpg);
+    background-size: cover;
+    height: 245px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.box2{
+    background-image: url(nst\ adypu\ image.avif);
+    background-size: cover;
+    height: 245px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.box3{
+    background-image: url(nst\ blr\ image.avif);
+     background-size: cover;
+    height: 245px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.box-text{
+    font-size: 25px;
+    color: #16191D;
+    text-align: left;
+    margin-top: 30px;
+    font-weight: 700;
+    color: #16191D;
+    font-family: mona-sans;
+}
+
+.explore{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;             /* span full box width so centering is predictable */
+    font-size: 20px;
+    background-color: #0B0C0E;
+    display: flex;           /* center child horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.explore a{
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: mona-sans;
+    text-decoration: none;
+}
+
+.text4{
+    display: flex;
+    /* center content inside the div */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0; /* vertical spacing from surrounding content */
+    position: static; /* keep the div in the normal document flow */
+    transform: none;
+    z-index: auto;
+    margin-top: 100px;
+}
+
+.text4 p{
+    font-weight: 700;
+    font-family: mona-sans;
+    color: #16191D;
+    font-size: 45px;
+}
+
+.brands{
+    height: 300px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+.brand-img{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border: none;
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+.video{
+    margin-top: 50px;
+    justify-content: space-evenly;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 70px;
+    margin-left: 50px;
+    
+}
+
+.text5{
+    display: block;
+    margin-left: 100px;
+    margin-top: 70px;
+    border: 2px solid grey;
+    height: 900px;
+    width: 1200px;
+    background-color: #FFC0CB;
+    border-radius: 8px;
+}
+
+.text5 p{
+    font-family: mona-sans;
+    font-weight: 800;
+    font-size: 30px;
+    color: #16191D;
+    margin-left: 40px;
+    
+}
+
+.google{
+    margin-top: 40px;
+}
+
+.stipend{
+    margin-bottom: 40px;
+}
+
+.curriculum{
+    height: 1000px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: block;
+    
+}
+
+.ind{
+     font-weight: 700;
+    font-family: mona-sans;
+    color: #16191D;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+.year1{
+    font-weight: 700;
+    font-size: 25px;
+    color: #007A51;
+    margin-left: 30px;
+}
+
+.foundation{
+    color: #5B6271;
+    font-weight: 600;
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+.achieve{
+     font-weight: 700;
+    font-size: 25px;
+    color: #6138D3;
+    margin-left: 30px;
+}
+
+.complex{
+    color: #5B6271;
+    font-weight: 600;
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+.innovate{
+     font-weight: 700;
+    font-size: 25px;
+    color: #0673F9;
+    margin-left: 30px;
+}
+
+.chat{
+    color: #5B6271;
+    font-weight: 600;
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+.year4{
+     font-weight: 700;
+    font-size: 25px;
+    color: #DE5A02;
+    margin-left: 30px;
+}
+
+.sem{
+     color: #5B6271;
+    font-weight: 600;
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+.end-part{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px; /* gives some breathing room from edges */
+    gap: 20px;
+}
+
+.end-part .icons{
+    margin-left: auto; /* push icons to the right */
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.end-part .icons a{
+    color: #16191D;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.end-part .icons a:hover{
+    color: #3271F0;
+}
+
+
+.foot-logo{
+    height: 45px;
+    width: 175px;
+    background-size: cover;
+    background-image: url("nst logo.svg");
+    margin: 0; /* reset margin — left spacing moved to .left-end */
+}
+
+.text6{
+    display: block;
+    margin: 0; /* reset margin — left spacing moved to .left-end */
+    margin-top: 8px;
+    color: #7B869D;
+    font-weight: 550;
+}
+
+/* Stack logo and text vertically on the left of end-part */
+.left-end{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 100px; /* preserve original left offset */
+    align-items: flex-start;
+}
+
+
